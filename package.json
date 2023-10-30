@@ -1,0 +1,19 @@
+{
+  "name": "node-2023",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lankruzer/node-2023.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lankruzer/node-2023/issues"
+  },
+  "homepage": "https://github.com/lankruzer/node-2023#readme"
+}
