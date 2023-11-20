@@ -3,5 +3,5 @@ export const PROCESS_COMMAND_BY_OS = {
     unix: 'ps -A -o %cpu,%mem,comm | sort -nr | head -n 1',
 };
 
-export const UPDATE_CONSOLE_PERIOD_MS = 1000;
+export const UPDATE_CONSOLE_PERIOD_MS = 100;
 export const UPDATE_FILE_PERIOD_MS = 60000;
