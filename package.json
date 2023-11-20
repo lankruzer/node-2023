@@ -1,8 +1,9 @@
 {
   "name": "node-2023",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon index.js"
   },
