@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "task3:1": "nodemon task3/task1.js",
+    "task3:2": "nodemon task3/task2.js",
+    "task3:3": "nodemon task3/task3.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/lankruzer/node-2023/issues"
   },
-  "homepage": "https://github.com/lankruzer/node-2023#readme"
+  "homepage": "https://github.com/lankruzer/node-2023#readme",
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
 }
