@@ -2,14 +2,14 @@ import fs from 'fs';
 import os from 'os';
 import childProcess from'child_process';
 
-import {PROCESS_COMMAND_BY_OS, UPDATE_CONSOLE_PERIOD_MS, UPDATE_FILE_PERIOD_MS} from './cosntants.js';
+import {PROCESS_COMMAND_BY_OS, UPDATE_CONSOLE_PERIOD_MS, UPDATE_FILE_PERIOD_MS} from './constants.js';
 
 const osPlatform = os.platform();
 const processCommand = osPlatform === 'win32' ? PROCESS_COMMAND_BY_OS.windows : PROCESS_COMMAND_BY_OS.unix;
 
 
 const writeLogIntoFile = (log) => {
-    fs.appendFile('activityMonitor.log', log, (error) => {
+    fs.appendFile('src/task2/activityMonitor.log', log, (error) => {
         if (error) {
             console.error(`Error during write into the log file: ${error}`);
         }
@@ -18,7 +18,7 @@ const writeLogIntoFile = (log) => {
 
 let lastLogFileUpdateAt;
 
-const activityMonitor = () => {
+export const activityMonitor = () => {
 
     const handleCommandResult = (error, stdout, stderr) => {
         console.clear();
@@ -44,6 +44,3 @@ const activityMonitor = () => {
 
     childProcess.exec(processCommand, handleCommandResult);
 }
-
-setTimeout(activityMonitor, UPDATE_CONSOLE_PERIOD_MS);
-

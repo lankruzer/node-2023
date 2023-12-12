@@ -6,9 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
-    "task3:1": "nodemon task3/task1.js",
-    "task3:2": "nodemon task3/task2.js",
-    "task3:3": "nodemon task3/task3.js"
+    "task1:1": "nodemon src/task1/task1.js",
+    "task2:1": "nodemon src/task2/task1.js",
+    "task3:1": "nodemon src/task3/task1.js",
+    "task3:2": "nodemon src/task3/task2.js",
+    "task3:3": "nodemon src/task3/task3.js"
   },
   "repository": {
     "type": "git",
