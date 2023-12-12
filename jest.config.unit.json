@@ -1,0 +1,19 @@
+{
+  "testMatch": ["**/*.test.{js,ts}"],
+  "collectCoverageFrom": [
+    "./src/**/*.{js,ts}",
+    "!**/*.test.{js,ts}",
+    "!**/*.integration-test.{js,ts}"
+  ],
+  "clearMocks": true,
+  "moduleFileExtensions": [
+    "js",
+    "mjs",
+    "cjs",
+    "jsx",
+    "ts",
+    "tsx",
+    "json",
+    "node"
+  ]
+}
