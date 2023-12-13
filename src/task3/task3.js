@@ -1,7 +1,7 @@
 import csvToJson from 'csvtojson';
 import fs from 'fs';
 
-const filePath = 'task3/csv/1';
+const filePath = 'src/task3/csv/1';
 
 const convertCsvToJson = async (path) => {
     try {

@@ -1,6 +1,6 @@
 {
   "name": "node-2023",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -14,7 +14,8 @@
     "task2:1": "nodemon src/task2/task1.js",
     "task3:1": "nodemon src/task3/task1.js",
     "task3:2": "nodemon src/task3/task2.js",
-    "task3:3": "nodemon src/task3/task3.js"
+    "task3:3": "nodemon src/task3/task3.js",
+    "task5:1": "nodemon src/task5/index.js"
   },
   "repository": {
     "type": "git",
